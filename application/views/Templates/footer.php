@@ -1,9 +1,14 @@
 
+	</div>
+	<script src="../../static/plugins/foundation-5.1.1./js/vendor/jquery.js"></script>
+	<script src="../../static/plugins/foundation-5.1.1./js/foundation.min.js"></script>
+	<script>
+		$(document).foundation();
+	</script>
+
 </body>
-<p class="footer">
+<div class="footer">
 	<strong>&copy; Marshall Sumwalt 2014</strong>
 	Page rendered in <strong>{elapsed_time}</strong> seconds
-</p>
-
-<script type="text/javascript">if(!NREUMQ.f){NREUMQ.f=function(){NREUMQ.push(["load",new Date().getTime()]);var e=document.createElement("script");e.type="text/javascript";e.src=(("http:"===document.location.protocol)?"http:":"https:")+"//"+"js-agent.newrelic.com/nr-100.js";document.body.appendChild(e);if(NREUMQ.a)NREUMQ.a();};NREUMQ.a=window.onload;window.onload=NREUMQ.f;};NREUMQ.push(["nrfj","beacon-5.newrelic.com","eb488e72a1","2666983","NgEEZBYHDUFWVk0KWg9LJUUXEgxfGFZWB1AIAwhZEAMRHUJGXBEYBhEPVAFGThJyWVUKRi0FBA==",0,32,new Date().getTime(),"","","","",""]);</script></body>
+</div>
 </html>
