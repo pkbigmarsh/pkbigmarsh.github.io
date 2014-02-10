@@ -16,4 +16,32 @@
 </head>
 
 <body>
+
+<nav class="top-bar" data-topbar>
+	<!-- Title Bar -->
+    <ul class="title-area">
+		<li class="name">
+            <h1><a href="<?php print base_url(); ?>">Home</a></h1>
+        </li>
+	</ul>
+
+    <!-- Left Section -->
+    <section class="top-bar-section">
+        <ul class="left">
+            <li class="has-dropdown">
+                <a href="<?php print site_url('projects'); ?>">Projects</a>
+                <ul class="dropdown">
+                    <li><a href="#">Budget</a></li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Right Section -->
+    <section class="top-bar-section">
+        <ul class="right">
+        </ul>
+    </section>
+</nav>
+
 <div class="row">
