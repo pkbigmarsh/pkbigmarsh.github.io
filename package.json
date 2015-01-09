@@ -6,9 +6,12 @@
     "url": "https://github.com/pkbigmarsh/PersonalWebsite"
   },
   "devDependencies": {
+    "del": "^1.1.1",
     "gulp": "^3.8.10",
     "gulp-jade": "^0.10.0",
+    "gulp-jshint": "^1.9.0",
     "gulp-plumber": "^0.6.6",
+    "gulp-uglify": "^1.0.2",
     "jade": "^1.8.2"
   }
 }
