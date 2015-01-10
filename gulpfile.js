@@ -15,8 +15,8 @@ gulp.task('default', ['clean'], function() {
 
 gulp.task('move', function() {
         // Resources
-        gulp.src('src/resources/*')
-            .pipe(gulp.dest("dist/resources"))
+        gulp.src('src/resources/**/*')
+            .pipe(gulp.dest("dist/resources/"))
 });
 
 gulp.task('templates', function() {
@@ -29,4 +29,4 @@ gulp.task('templates', function() {
     .pipe(gulp.dest('dist/'));
 });
 
-gulp.task('clean', del.bind(null, ['dist/**/*', '!.*']));
+gulp.task('clean', del.bind(null, ['dist/**/**/*', '!.*']));
