@@ -35,7 +35,7 @@ gulp.task('templates', function() {
 gulp.task('deploy', function () {
     return gulp.src("./dist/**/**/*")
         .pipe(deploy({
-            origin: 'github'
+            remoteUrl: "https://github.com/pkbigmarsh/pkbigmarsh.github.io",
         }))
 });
 
