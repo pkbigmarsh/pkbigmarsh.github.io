@@ -6,7 +6,10 @@ var del     = require('del'),
     jade    = require('gulp-jade'),
     // js
     jshint  = require('gulp-jshint'),
-    uglify  = require('gulp-uglify');
+    uglify  = require('gulp-uglify'),
+
+    // delpoying
+    deploy  = require('gulp-gh-pages');
 
 gulp.task('default', ['clean'], function() {
     gulp.start('move', 'templates')
@@ -27,6 +30,13 @@ gulp.task('templates', function() {
         pretty: true
     }))
     .pipe(gulp.dest('dist/'));
+});
+
+gulp.task('deploy', function () {
+    return gulp.src("./dist/**/**/*")
+        .pipe(deploy({
+            origin: 'github'
+        }))
 });
 
 gulp.task('clean', del.bind(null, ['dist/**/**/*', '!.*']));
